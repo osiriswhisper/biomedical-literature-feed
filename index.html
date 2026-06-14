@@ -1,281 +1,360 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biomedical Tech Daily Literature Digest</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss-typography/0.5.10/typography.min.css" />
-</head>
-<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-teal-500 selection:text-slate-950">
-    <div class="max-w-4xl mx-auto px-6 py-16">
-        <header class="mb-12 border-b border-slate-800 pb-8">
-            <h1 class="text-4xl font-extrabold tracking-tight text-white">
-               🧬 Biomedical Tech Daily Literature Digest
-            </h1>
-            <p class="text-slate-400 mt-3 text-lg">
-               An automated, daily AI-curated stream of cutting-edge engineering, signals, and healthcare preprints.
-            </p>
-        </header>
-        
-        <main class="prose prose-invert max-w-none 
-          prose-headings:text-teal-400 prose-headings:font-bold prose-headings:mt-8 prose-headings:mb-4
-          prose-a:text-teal-400 hover:prose-a:text-teal-300 
-          prose-strong:text-white prose-ul:list-disc prose-ul:ml-6 prose-li:my-2">
-            
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biomedical Tech Daily Literature Digest</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-teal-500 selection:text-slate-950">
-    <div class="max-w-4xl mx-auto px-6 py-16">
-        <header class="mb-12 border-b border-slate-800 pb-8">
-            <h1 class="text-4xl font-extrabold tracking-tight text-white flex items-center gap-3">
-               🧬 Biomedical Tech Daily Literature Digest
-            </h1>
-            <p class="text-slate-400 mt-3 text-lg">
-               An automated, daily AI-curated stream of cutting-edge engineering, signals, and healthcare preprints.
-            </p>
-        </header>
-        
-        <main class="prose prose-invert max-w-none prose-headings:text-teal-400 prose-a:text-teal-400 hover:prose-a:text-teal-300 prose-strong:text-white">
-            ### 📄 [Emulating the gingival-tooth interface during bacterial, fungal, and viral infection in a microphysiological model of the human oral cavity](https://www.biorxiv.org/content/10.64898/2026.06.11.731421v1?rss=1)  
-**Category:** #ComputationalBiology, #Genomics_Proteomics  
-
-* **Core Engineering Problem:** Current oral infection models lack a physiologically realistic, integrated gingiva‑tooth unit that can simultaneously support vascularized human tissue, dynamic saliva flow, and controlled microbial colonization, limiting mechanistic insight into host‑microbe‑environment interactions.  
-
-* **Methodology & Tech Stack:**  
-  * **Bio‑fabrication:** 3‑D bioprinting of vascularized human gingival constructs combined with polymeric tooth analogs; microfluidic channels deliver defined saliva flow rates.  
-  * **Microbial Engineering:** Co‑culture of *Streptococcus mutans* (bacterial) and *Candida albicans* (fungal) to generate cross‑kingdom biofilms; live SARS‑CoV‑2 inoculation under BSL‑3 conditions.  
-  * **Omics & Data Analytics:** Single‑cell RNA‑seq (10x Genomics Chromium) processed with Seurat/Scanpy pipelines; global untargeted metabolomics via LC‑MS/MS; integration performed with multi‑omics factor analysis (MOFA) and pathway enrichment (Reactome, KEGG).  
-  * **Computational Modeling:** Finite‑element simulation of saliva shear stress and nutrient gradients; agent‑based modeling of microbial dispersal across the gingival‑tooth interface.  
-
-* **Biomedical Innovation:**  
-  * Provides the first **human‑relevant, organ‑on‑a‑chip** platform that recapitulates the structural and functional coupling of gingiva and tooth, enabling mechanistic studies of dental caries, periodontitis, and oral viral entry (e.g., SARS‑CoV‑2).  
-  * Reveals **fungus‑driven epithelial‑to‑mesenchymal transition** signatures and metabolic rewiring at single‑cell resolution, uncovering potential therapeutic targets for oral candidiasis and its systemic sequelae.  
-  * Demonstrates that **hyposalivation**—a common side‑effect of many medications—exacerbates fungal pathogenicity, offering a preclinical testbed for saliva‑replacement therapies and preventive oral care.  
-  * The integrated multi‑omics readouts and fluidic control make the system directly translatable to **drug‑screening pipelines**, personalized medicine (patient‑derived gingival cells), and **computational modeling of host‑microbe dynamics**, bridging a critical gap between in‑vitro assays and clinical oral health outcomes.
-
-
-### 📄 [Receive-Only Coupled Wireless Radiofrequency Probe for Endocavity MR Imaging Using a pTx System](https://www.biorxiv.org/content/10.64898/2026.06.10.731354v1?rss=1)
-**Category:** #MedicalImaging, #SignalProcessing  
-
-* **Core Engineering Problem:**  
-  Conventional endocavity MR coils suffer from strong transmit‑field coupling, which limits their ability to provide high local SNR without inducing unsafe SAR hotspots. Achieving a truly receive‑only, wireless resonator that remains electromagnetically isolated from the transmit field while still delivering substantial SNR gain is a persistent hardware challenge.
-
-* **Methodology & Tech Stack:**  
-  - Fabricated a passive RF resonator (micro‑fabricated, tuned to 3 T Larmor frequency) that operates solely in receive mode.  
-  - Employed a dual‑drive birdcage coil driven in a linearly‑polarized mode (parallel‑transmit, pTx) to create a transmit field that is orthogonal to the resonator’s mode, thereby providing electromagnetic decoupling.  
-  - Conducted electromagnetic simulations (SAR distribution) followed by benchtop heating experiments to verify safety (<1.21 W/kg).  
-  - Validated performance with flip‑angle mapping, phantom SNR measurements (1.6× gain), and in‑vivo studies (≈2× gain) using standard 3 T clinical MRI hardware.
-
-* **Biomedical Innovation:**  
-  This work delivers a compact, wireless, receive‑only probe that can be introduced endoscopically without the need for wired connections or active circuitry, dramatically simplifying interventional MR workflows. By leveraging the dual‑drive pTx system for intrinsic decoupling, the approach minimizes SAR‑related risks while providing localized SNR amplification, which can improve visualization of small lesions, guide biopsies, or monitor therapeutic devices in real time. The combination of safety‑validated SAR control, modest hardware complexity, and demonstrable in‑vivo SNR improvement positions the technology as a practical step toward safer, higher‑resolution interventional MRI.
-
-
-### 📄 [Effects of Left Atrial Wall Thickness on Myocardial Mechanics and Blood Dynamics using Multiscale Modeling](https://www.biorxiv.org/content/10.64898/2026.06.09.731221v1?rss=1)  
-**Category:** #MedicalImaging, #ComputationalBiology  
-
-* **Core Engineering Problem:** Current patient‑specific left atrial (LA) models typically assume a uniform wall thickness, which limits the accuracy of predicted myocardial stresses, strains, and intra‑atrial flow patterns. Quantifying how spatial variations in LA wall thickness influence both solid mechanics and fluid dynamics remains an open challenge.  
-
-* **Methodology & Tech Stack:**  
-  * **Geometry acquisition:** Gated cardiac CT angiography (CTA) to reconstruct subject‑specific LA anatomy.  
-  * **Multiscale modeling:** Coupled finite‑element (FE) solid mechanics of the atrial myocardium with computational fluid dynamics (CFD) of the blood pool using a partitioned fluid‑structure interaction (FSI) framework.  
-  * **Thickness variants:** Four LA wall models – a baseline variable‑thickness mesh, two reduced‑dilation variants, and a 2 mm uniform‑thickness mesh – all sharing the same material constitutive parameters (personalized on the baseline).  
-  * **Quantitative outputs:** Myocardial volume, cavity volume, wall displacements, strain, Cauchy stress, time‑averaged wall shear stress (TAWSS), and oscillatory shear index (OSI).  
-
-* **Biomedical Innovation:** By systematically probing the sensitivity of LA mechanics and hemodynamics to realistic wall‑thickness heterogeneity, the study reveals that myocardial stress concentrations and oscillatory shear patterns are far more responsive to wall‑thickness representation than bulk volume or displacement metrics. This insight is critical for:  
-
-  1. **Risk stratification:** Elevated local stresses and high‑OSI regions are linked to atrial remodeling, fibrosis, and thrombus formation, especially in the left atrial appendage (LAA).  
-  2. **Therapeutic planning:** Personalized LA models that incorporate true wall‑thickness maps could improve the targeting of catheter‑based ablation or LAA occlusion devices by highlighting mechanically vulnerable zones.  
-  3. **Model validation pipelines:** Demonstrates that high‑resolution CTA‑derived wall‑thickness data should be integrated into computational pipelines rather than replaced by uniform assumptions, raising the fidelity of in‑silico trials for atrial arrhythmia therapies.  
-
-Overall, the work advances computational cardiology by bridging patient‑specific imaging with multiscale biomechanics, offering a more nuanced toolset for translational research and precision cardiac care.
-
-
-### 📄 [AI-enabled discovery of small molecules targeting complementary pathways for hair follicle rejuvenation](https://www.biorxiv.org/content/10.64898/2026.06.09.728282v1?rss=1)  
-**Category:** #ComputationalBiology  
-
-* **Core Engineering Problem:** Current drug‑discovery pipelines for hair‑loss therapies rely on single‑target screens and manual hit‑to‑lead workflows, which are slow, costly, and often miss synergistic pathway modulation needed for robust follicle rejuvenation.  
-
-* **Methodology & Tech Stack:**  
-  * **Graph Neural Networks (GNNs)** trained on large‑scale phenotypic screening data to predict compound‑phenotype relationships.  
-  * **Structure‑based virtual screening** (docking against PHD2 and 5‑reductases) to prioritize molecules that simultaneously engage complementary targets.  
-  * **Hit‑to‑lead optimization** using medicinal chemistry rules and ADMET prediction tools.  
-  * **Multi‑omics validation:** RNA‑seq for pathway engagement, plus functional assays in primary dermal papilla cells and a 3D hair‑follicle organoid platform.  
-
-* **Biomedical Innovation:** By coupling AI‑driven multi‑target prediction with experimental organoid validation, the study delivers a fast‑track platform for discovering combinatorial small‑molecule therapeutics that address both intrinsic (hypoxia signaling) and extrinsic (androgen signaling) mechanisms of hair thinning. The resulting water‑soluble formulation shows strong translational promise for topical or systemic treatments, potentially accelerating the path from bench to bedside for a high‑impact dermatological indication.
-
-
-### 📄 [Multimodal PET Defines a Goldilocks Thermal Window for Focused Ultrasound Ablation and Immunotherapy Combinations](https://www.biorxiv.org/content/10.64898/2026.06.10.731490v1?rss=1)  
-**Category:** #MedicalImaging, #ComputationalBiology  
-
-* **Core Engineering Problem:**  
-  Determining the optimal thermal dose for thermally ablative focused ultrasound (T‑FUS) that maximally debulks tumor while preserving the microvascular and stromal architecture required for effective immunotherapy delivery—a balance that current FUS protocols lack quantitative guidance for.
-
-* **Methodology & Tech Stack:**  
-  - **In‑silico thermal modeling:** Finite‑element simulations to generate three distinct thermal dose regimens (low, intermediate, high).  
-  - **Multimodal imaging:**  
-    - Dynamic **[^18F]‑FDG PET** for whole‑tumor metabolic activity.  
-    - **[^89Zr]‑anti‑CD47 immunoPET** to map tumor‑targeted antibody distribution pre‑ and post‑ablation.  
-    - Contrast‑enhanced ultrasound (CE‑US) for real‑time perfusion assessment.  
-  - **Histopathology & molecular profiling:** H&E, TTC staining, immunofluorescence for microvascular coverage, and hypoxyprobe labeling for oxygenation status.  
-  - **Quantitative analysis:** Integration of PET-derived standardized uptake values (SUV) with CE‑US perfusion metrics and ex‑vivo biodistribution to calculate “antibody enrichment” within residual viable tumor.
-
-* **Biomedical Innovation:**  
-  - **Therapeutic precision:** Introduces a PET‑guided “Goldilocks” thermal window that achieves partial ablation yet retains a perfused, oxygenated niche, enabling large biologics (e.g., checkpoint antibodies) to penetrate the post‑ablation tumor.  
-  - **Translational pathway:** Provides a reproducible imaging framework for clinicians to tailor T‑FUS parameters on a patient‑specific basis, potentially improving response rates when combined with immunotherapies.  
-  - **Clinical impact:** By demonstrating a ~3‑fold increase in antibody exposure within viable tumor tissue after optimal T‑FUS, the work suggests a strategy to enhance the efficacy of combination regimens without increasing systemic toxicity—highly relevant for solid‑tumor oncology where immunotherapy penetration is a major hurdle.  
-
----  
-
-*Overall assessment:* The study presents a novel, imaging‑driven approach to solve a critical engineering and translational challenge in focused‑ultrasound oncology. Its integration of quantitative PET, ultrasound, and computational modeling offers a clear pathway toward clinically actionable FUS protocols, marking it as a high‑impact contribution to medical imaging and computational biology.*
-
-
-### 📄 [HMEC-1 extracellular vesicles as regulators of endothelial cell activation under inflammation](https://www.biorxiv.org/content/10.64898/2026.06.08.730746v1?rss=1)  
-**Category:** #Genomics_Proteomics, #ComputationalBiology  
-
-* **Core Engineering Problem:**  
-  Current extracellular‑vesicle (EV) isolation protocols for endothelial cells suffer from low purity and high co‑isolation of serum and extracellular‑matrix proteins, limiting reliable proteomic profiling and functional interpretation.  
-
-* **Methodology & Tech Stack:**  
-  - **Isolation:** Comparative workflow using conventional ultracentrifugation (UC Bulk) versus ultracentrifugation followed by size‑exclusion chromatography (UC + SEC).  
-  - **Characterization:** Nanoparticle Tracking Analysis (NTA), cryogenic electron microscopy (cryo‑EM), immunoblotting for canonical EV markers (ALIX, CD9).  
-  - **Proteomics:** Label‑free quantitative mass spectrometry (LC‑MS/MS) with downstream bioinformatic enrichment analysis (GO, pathway mapping).  
-  - **Functional Assays:** In‑vitro wound‑closure (dermal fibroblasts) and endothelial activation assays (primary HDMECs) measuring VCAM‑1 expression and VE‑cadherin junction integrity under TNF‑α challenge.  
-
-* **Biomedical Innovation:**  
-  - Demonstrates that a modest addition of SEC dramatically boosts EV purity (77‑fold particle‑to‑protein improvement) without sacrificing biological activity, establishing a scalable, reproducible pipeline for high‑quality endothelial EV production.  
-  - Reveals a dual, inflammation‑dependent EV phenotype that simultaneously amplifies immune‑recruitment signals (VCAM‑1 up‑regulation) and preserves endothelial barrier integrity—a paradoxical mechanism that could be harnessed for targeted anti‑inflammatory or pro‑repair therapies.  
-  - The extensive proteomic catalog (673 proteins) provides a valuable resource for computational biologists to model EV‑mediated signaling networks and for translational scientists developing EV‑based therapeutics for vascular homeostasis, wound healing, and chronic inflammatory diseases.
-
-
-### 📄 [SPOTTER: Automated Tissue‑Barcoding Platform for Spatial Proteomics and Phosphoproteomics](https://www.biorxiv.org/content/10.64898/2026.06.08.730901v1?rss=1)  
-**Category:** #Genomics_Proteomics  
-
-* **Core Engineering Problem:**  
-  Current spatial proteomics workflows rely on labor‑intensive laser‑capture microdissection or low‑plex antibody arrays, which limit throughput, spatial resolution, and the ability to profile post‑translational modifications such as phosphorylation across whole tissue sections.  
-
-* **Methodology & Tech Stack:**  
-  - **Robotic Automation:** Customizable SPOTTER robot that deposits micron‑scale DNA‑based barcodes onto intact tissue sections.  
-  - **On‑site Protein Labeling:** In situ enzymatic tagging of native proteins (including phosphoproteins) to encode spatial origin.  
-  - **High‑Resolution LC‑MS/MS:** Downstream quantitative proteomics/phosphoproteomics using Orbitrap‑type instruments.  
-  - **Data Integration:** Spatial barcode demultiplexing pipelines (Python/NumPy, Pandas) coupled with downstream statistical tools (MSstats, Perseus) for region‑specific quantification.  
-
-* **Biomedical Innovation:**  
-  SPOTTER delivers unbiased, whole‑tissue proteome and phosphoproteome maps at micron resolution, unlocking the ability to link signaling pathway activity to micro‑anatomical niches (e.g., tumor‑immune interfaces, neurovascular units). This high‑plex, scalable approach accelerates biomarker discovery, supports precision pathology, and paves the way for clinical diagnostics that integrate spatial proteomic signatures with histopathology.
-
-
-### 📄 [Modeling Particle Transport In Biomedical Flows Using Implicit Geometry Representations](https://www.biorxiv.org/content/10.64898/2026.06.07.730719v1?rss=1)
-**Category:** #ComputationalBiology, #MedicalImaging  
-
-* **Core Engineering Problem:**  
-  Current Lagrangian particle‐tracking methods in CFD require costly particle‑wall contact checks against high‑resolution triangulated vessel meshes, causing computational expense that scales poorly with particle count and mesh density.
-
-* **Methodology & Tech Stack:**  
-  - Introduces an **implicit geometry representation** via a **signed distance field (SDF)** computed from patient‑specific vessel surfaces.  
-  - Transforms the contact‑detection step from a geometric intersection test (Eulerian → Lagrangian) into a simple lookup of the SDF value at each particle location, enabling O(1) per‑particle checks.  
-  - Validates the approach on analytically defined geometries (cylinders, bifurcations) and on a realistic human arterial segment, comparing against conventional mesh‑intersection methods.  
-  - Uses standard CFD solvers (e.g., OpenFOAM) for the underlying flow field and custom Python/C++ modules for SDF generation and particle integration.
-
-* **Biomedical Innovation:**  
-  - **Speed:** By reducing contact‑resolution cost, the method makes large‑scale particle transport simulations (e.g., emboli propagation, targeted drug‑carrier trajectories) tractable on modest compute resources, opening the door to patient‑specific, “what‑if” scenario analyses in clinical workflows.  
-  - **Fidelity:** The implicit representation preserves geometric detail without the need for mesh refinement near walls, maintaining accuracy in predicting particle deposition sites that are critical for stroke, thrombosis, and embolic risk assessments.  
-  - **Translational Potential:** Faster, high‑fidelity simulations can be integrated with medical imaging pipelines (CT, MRI) to generate personalized risk maps for vascular interventions or to optimize design of micro‑particle drug delivery systems, thereby accelerating the path from computational insight to bedside decision support.
-
-
-### 📄 [Deep learning based design of buried hydrogen bond networks with HBDesigner](https://www.biorxiv.org/content/10.64898/2026.06.08.730848v1?rss=1)
-**Category:** #ComputationalBiology, #Genomics_Proteomics  
-
-* **Core Engineering Problem:**  
-  Designing stable, buried hydrogen‑bond (H‑bond) networks in proteins remains difficult because current computational tools either ignore deep‑learning‑driven conformational sampling or rely on coarse energy functions that cannot guarantee connectivity and burial of polar groups.
-
-* **Methodology & Tech Stack:**  
-  - **Deep‑learning sampler:** a graph‑neural‑network (GNN) trained on curated H‑bond motifs extracted from the Protein Data Bank (PDB) to propose residue‑type and rotamer placements that satisfy geometric H‑bond constraints.  
-  - **Atomistic scoring:** integration with Rosetta’s full‑atom energy function (including electrostatics, solvation, and van‑der‑Waals terms) to re‑rank and refine the sampled networks.  
-  - **Iterative design loop:** alternating GNN‑generated proposals with Rosetta minimization, enabling rapid exploration of combinatorial H‑bond network space while preserving protein backbone integrity.  
-  - **Benchmark datasets:** 1,200 high‑resolution monomeric and oligomeric scaffolds, plus a curated set of heterodimeric interfaces previously used in RosettaDesign studies.
-
-* **Biomedical Innovation:**  
-  - **Therapeutic protein engineering:** reliable burial of polar residues can dramatically increase solubility and stability of biologics (e.g., antibodies, cytokines), reducing aggregation‑related immunogenicity.  
-  - **Enzyme and biosensor design:** engineered H‑bond networks can create pre‑organized active‑site architectures, enabling de‑novo catalysts or high‑affinity binding domains for diagnostic biosensors.  
-  - **Precision protein‑protein interaction (PPI) control:** the demonstrated ability to encode specificity into homologous heterodimers opens avenues for programmable cellular scaffolds, synthetic signaling pathways, and targeted drug delivery systems.  
-
-Overall, HBDesigner introduces a genuinely novel combination of deep‑learning‑guided sampling with rigorous atomistic validation, addressing a long‑standing gap in protein design and offering tangible routes to next‑generation therapeutic and diagnostic proteins.
-
-
-### 📄 [Physiologically Informed PCA-Partial Correlation for highly Collinear Brainstem fMRI Networks](https://www.biorxiv.org/content/10.64898/2026.06.08.730883v1?rss=1)  
-**Category:** #SignalProcessing, #MedicalImaging  
-
-* **Core Engineering Problem:**  
-  Resting‑state fMRI functional connectivity analyses struggle to disentangle direct from indirect interactions in highly collinear brainstem networks, where strong inter‑node coupling and widespread neuromodulatory influences produce multicollinearity that inflates false positives in conventional bivariate and standard partial‑correlation methods.
-
-* **Methodology & Tech Stack:**  
-  - **Algorithmic core:** A PCA‑regularized partial‑correlation framework (denoted **PCA‑ρ_PC**). Principal Component Analysis is applied to the set of brainstem time‑series to extract orthogonal components that capture shared modulatory variance, thereby reducing multicollinearity before estimating partial correlations.  
-  - **Regularization:** The approach integrates ridge‑type shrinkage on the residual covariance matrix to stabilize inverse estimation in high‑dimensional settings.  
-  - **Validation pipeline:** Synthetic network simulations (varying edge density, signal‑to‑noise ratio, and collinearity) plus empirical rs‑fMRI data from a publicly available brainstem‑focused cohort (e.g., Human Connectome Project brainstem masks).  
-  - **Software & tools:** Implemented in Python (NumPy, SciPy, scikit‑learn for PCA; `statsmodels` for partial correlation) and evaluated with the `networkx` library for graph metrics (sparsity, modularity, edge‑wise precision/recall).  
-
-* **Biomedical Innovation:**  
-  - **Physiological relevance:** By explicitly modeling shared modulatory variance within the brainstem, the method yields sparser, more interpretable connectomes that align with known neuroanatomical pathways (e.g., monoaminergic nuclei, reticular formation).  
-  - **Clinical translation:** Accurate delineation of direct brainstem functional links can improve biomarkers for disorders where brainstem dysregulation is central (e.g., Parkinson’s disease, sleep apnea, autonomic failure). The sparsity and robustness of the resulting networks facilitate downstream machine‑learning classifiers that require stable feature sets across subjects.  
-  - **Broader impact:** The PCA‑conditioning strategy is generic and can be extended to other high‑collinearity neuroimaging contexts (e.g., subcortical nuclei, whole‑brain high‑resolution parcellations), potentially enhancing the reliability of functional connectivity studies that inform precision‑medicine pipelines.
-
-
-### 📄 [Extracellular Matrix Mechanobiology in Pancreatic Ductal Adenocarcinoma: Correlating In Vivo Patient Magnetic Resonance Elastography with Ex Vivo Tissue Mechanics and Histopathology](https://www.biorxiv.org/content/10.64898/2026.06.07.730664v1?rss=1)  
-**Category:** #MedicalImaging, #ComputationalBiology  
-
-* **Core Engineering Problem:**  
-  Non‑invasive imaging (MRE) provides bulk mechanical metrics of pancreatic tissue, but it is unclear how these metrics map onto the microscale extracellular matrix (ECM) composition, cellular organization, and patient outcomes. Current clinical practice lacks validated mechanical biomarkers that reliably reflect tumor desmoplasia and prognostic information.  
-
-* **Methodology & Tech Stack:**  
-  - **In‑vivo:** Clinical 3 T magnetic resonance elastography (MRE) to quantify shear wave speed (c) and loss angle (ϕ) across the pancreas.  
-  - **Ex‑vivo:** Unconfined uniaxial compression testing of freshly resected PDAC and adjacent non‑malignant tissue to obtain elastic modulus and stress‑relaxation halftime (visco‑elastic parameters).  
-  - **Histopathology:** Quantitative image analysis (ImageJ/Fiji pipelines) of Masson‑Trichrome and H&E sections to measure collagen‑rich fibrous area, nuclear density, and nuclear shape descriptors (area, aspect ratio).  
-  - **Data Integration:** Multivariate linear and Cox regression to correlate MRE‑derived stiffness/viscosity with ex‑vivo mechanics, collagen fraction, cellularity, nuclear morphology, and overall survival.  
-
-* **Biomedical Innovation:**  
-  - Demonstrates that pre‑operative MRE parameters are surrogate, non‑invasive read‑outs of tumor ECM remodeling and visco‑elastic behavior, linking imaging directly to the biomechanical tumor microenvironment.  
-  - Provides the first patient‑level evidence that a softer, less viscous peritumoral environment (as seen on MRE) predicts a stiffer, more viscous tumor core with dense collagen, reduced cellularity, elongated nuclei, and worse survival—information that could stratify patients for mechanobiology‑targeted therapies (e.g., stromal depletion, matrix‑modulating drugs).  
-  - Establishes a translational workflow that can be adopted in high‑volume pancreatic surgery centers, enabling prospective validation of MRE‑based mechanical biomarkers for risk assessment, treatment planning, and monitoring therapeutic response without the need for invasive tissue sampling.  
-
-* **Overall Assessment:**  
-  The study delivers a genuine interdisciplinary advance by bridging clinical magnetic resonance elastography with rigorous ex‑vivo biomechanics and quantitative histopathology in a human PDAC cohort. The integrated approach uncovers mechanistic links between imaging biomarkers, ECM architecture, and patient prognosis—an insight that is both scientifically novel and poised to impact clinical decision‑making in pancreatic cancer.
-
-
-### 📄 [Active Learning-Guided Peptide Design for Modulating Condensate Properties upon Recruitment](https://www.biorxiv.org/content/10.64898/2026.06.06.730477v1?rss=1)
-**Category:** #ComputationalBiology, #Genomics_Proteomics  
-
-* **Core Engineering Problem:**  
-  Predicting how specific peptide sequences will alter the material properties of biomolecular condensates is a high‑dimensional, poorly understood problem; existing approaches rely on exhaustive molecular dynamics (MD) simulations or trial‑and‑error experiments, which are computationally prohibitive and provide limited insight into sequence‑property relationships.
-
-* **Methodology & Tech Stack:**  
-  - **Coarse‑grained MD simulations** (Martini‑type force fields) to model peptide‑scaffold interactions within the MUT‑16 condensate.  
-  - **Active learning loop** combining **Bayesian optimization** with a **graph‑convolutional neural network (GCN)** that encodes peptide sequences and predicts condensate metrics (e.g., viscosity, surface tension).  
-  - Iterative selection of the most informative peptide variants for simulation, dramatically reducing the required number of MD runs while continuously refining the surrogate model.  
-
-* **Biomedical Innovation:**  
-  - Provides a scalable, physics‑informed framework to engineer peptide “clients” that can fine‑tune condensate behavior, opening avenues for therapeutic modulation of phase‑separated organelles implicated in neurodegenerative diseases (e.g., ALS, Alzheimer’s).  
-  - By linking sequence design directly to emergent material properties, the approach accelerates the discovery of synthetic biomolecules for targeted drug delivery, synthetic organelle construction, and the development of diagnostic tools that sense or correct aberrant condensate dynamics.
-        </main>
-        
-        <footer class="mt-16 pt-8 border-t border-slate-800 text-center text-sm text-slate-500">
-            Automatically updated every 24 hours by n8n.
-        </footer>
-    </div>
-</body>
-</html>
-
-        </main>
-        
-        <footer class="mt-16 pt-8 border-t border-slate-800 text-center text-sm text-slate-500">
-            Automatically updated every 24 hours by n8n.
-        </footer>
-    </div>
-</body>
-</html>
+<h3 id="pertdiffbenchbenchmarkingdiffusionmodelsforsinglecellperturbationresponsepredictionhttpswwwbiorxivorgcontent106489820260613732013v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.13.732013v1?rss=1">PertDiffBench: Benchmarking Diffusion Models for Single-Cell Perturbation Response Prediction</a></h3>
+<p><strong>Category:</strong> #Genomics_Proteomics, #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong> Current evaluations of diffusion‑based generative models for transcriptomic perturbation prediction conflate architectural advances, input representations, biological context, and metric choice, making it impossible to pinpoint where diffusion methods truly add value over simpler baselines.  </p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p><strong>Models:</strong> Diffusion frameworks (DDPM, scDiffusion), baseline generative methods (scGen, scVI, STATE).  </p></li>
+<li><p><strong>Algorithms:</strong> Standard denoising diffusion probabilistic modeling, conditional generation, latent‑space encoders.  </p></li>
+<li><p><strong>Datasets:</strong> Multiple single‑cell RNA‑seq atlases (e.g., Perturb‑Seq, CRISPR‑Perturb) and bulk RNA‑seq perturbation collections spanning drugs, species, and time points.  </p></li>
+<li><p><strong>Evaluation Pipeline:</strong> Three complementary settings—(i) in‑distribution prediction, (ii) out‑of‑distribution generalization (unseen cell types, species, drugs, intermediate time points), and (iii) stress‑test manipulations (feature dimensionality, noise type, gene ordering, encoder pre‑training).  </p></li>
+<li><p><strong>Biomedical Innovation:</strong> By delivering a rigorously standardized benchmark, PertDiffBench clarifies when diffusion models are advantageous for predicting cellular responses to genetic or chemical perturbations. This informs the selection of computational tools in drug‑response modeling, functional genomics, and precision‑medicine pipelines, ultimately accelerating hypothesis generation and therapeutic target validation in real‑world biomedical research.</p></li>
+</ul>
+<h3 id="reinforcementlearningdrivenunifiedgenerativeframeworkformultiobjectivernacodondesignhttpswwwbiorxivorgcontent106489820260612732012v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.12.732012v1?rss=1">Reinforcement learning-driven unified generative framework for multi-objective RNA codon design</a></h3>
+<p><strong>Category:</strong> #Genomics_Proteomics, #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong> Existing RNA codon design pipelines treat sequence generation and downstream optimization as separate steps, leading to inefficient handling of long transcripts (&gt;3 kb) and poor transferability across species and RNA classes.  </p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p><strong>Reinforcement Learning (RL):</strong> A policy‑gradient agent (proximal policy optimization) learns to emit nucleotides token‑by‑token while being rewarded for multiple objectives (e.g., codon usage bias, secondary‑structure stability, immunogenicity).  </p></li>
+<li><p><strong>Unified Generative Model:</strong> A transformer‑based encoder‑decoder architecture serves as the policy network, enabling context‑aware generation across thousands of positions.  </p></li>
+<li><p><strong>Multi‑objective Reward Shaping:</strong> Composite reward combines species‑specific codon adaptation index, minimum free energy from ViennaRNA, and off‑target immunogenicity scores.  </p></li>
+<li><p><strong>Training Data:</strong> &gt;200 k curated coding sequences spanning six model organisms (human, mouse, yeast, <em>E. coli</em>, <em>A. thaliana</em>, <em>D. melanogaster</em>) and five RNA modalities (mRNA, siRNA, lncRNA, circRNA, aptamer).  </p></li>
+<li><p><strong>Evaluation:</strong> In‑silico benchmarks against state‑of‑the‑art design tools (e.g., DNAWorks, RiboDesigner) and experimental validation on a subset of 150 designed mRNAs expressed in HEK293 cells.  </p></li>
+<li><p><strong>Biomedical Innovation:</strong> By collapsing generation and optimization into a single RL loop, RNARL can rapidly produce therapeutically viable RNA sequences that respect species‑specific translational efficiency, structural robustness, and safety constraints. This accelerates the design‑build-test cycle for mRNA vaccines, RNA‑based gene therapies, and synthetic biology applications, offering a scalable, universal platform that can be deployed via an open‑source web interface for rapid prototyping by clinicians and biotech engineers.</p></li>
+</ul>
+<h3 id="protaffproteinbindingaffinitypredictionvialorafinetunedesm2httpswwwbiorxivorgcontent106489820260613732058v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.13.732058v1?rss=1">ProtAff: Protein Binding Affinity Prediction via LoRA-Finetuned ESM-2</a></h3>
+<p><strong>Category:</strong> #Genomics_Proteomics, #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong><br />
+Existing structure‑prediction pipelines (e.g., AlphaFold 3, Boltz‑2) generate high‑quality docking poses, yet their confidence scores do not correlate with the actual binding affinity of protein–protein pairs. A sequence‑only model that can reliably rank affinities within a target is still missing.</p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p><strong>Base model:</strong> ESM‑2 transformer (650 M parameters) pretrained on millions of protein sequences.  </p></li>
+<li><p><strong>Fine‑tuning strategy:</strong> Low‑Rank Adaptation (LoRA) applied to the attention weights, preserving the massive pretrained knowledge while efficiently learning affinity‑specific signals.  </p></li>
+<li><p><strong>Architecture add‑on:</strong> Cross‑attention module that jointly embeds the two interacting protein sequences.  </p></li>
+<li><p><strong>Training objective:</strong> Margin ranking loss on a curated dataset of 362,567 measured affinities drawn from 20 heterogeneous sources (SPR, ITC, cellular assays, etc.).  </p></li>
+<li><p><strong>Benchmarking:</strong> EGFR‑focused AdaptyvBio set (N = 55) for within‑target ranking; VHH‑antigen crystal set (91 pairs) for cross‑target discrimination; comparison against AF3/Boltz‑2 confidence metrics and prior ML predictors (MINT, CrossAffinity).  </p></li>
+<li><p><strong>Biomedical Innovation:</strong>  </p></li>
+<li><p><strong>Accelerated therapeutic design:</strong> Enables rapid, sequence‑only screening of antibody or peptide candidates, cutting down the need for costly structural modeling or experimental affinity measurements.  </p></li>
+<li><p><strong>Target‑specific optimization:</strong> Demonstrated 2.8‑fold affinity improvement in a Nipah‑virus binder competition, highlighting practical utility for emerging pathogen response.  </p></li>
+<li><p><strong>Resource‑efficient deployment:</strong> LoRA fine‑tuning keeps computational overhead low, making the model amenable to integration in cloud‑based drug‑discovery pipelines or on‑premise compute clusters without retraining the full 650 M transformer.  </p></li>
+<li><p><strong>Strategic insight:</strong> Shows that sequence‑based large‑language models can surpass traditional structure‑confidence scores for within‑target ranking, paving the way for next‑generation in‑silico affinity prediction tools that can be coupled with experimental validation loops for faster, more cost‑effective biologics development.</p></li>
+</ul>
+<h3 id="moebindguidingdenovoproteinbindergenerationwithsparseexpertshttpswwwbiorxivorgcontent106489820260613732043v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.13.732043v1?rss=1">MoE-Bind: Guiding De Novo Protein Binder Generation with Sparse Experts</a></h3>
+<p><strong>Category:</strong> #Genomics_Proteomics, #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong><br />
+Current de novo protein binder design pipelines rely heavily on structure‑based methods that need high‑resolution target conformations and incur large computational costs per design, limiting scalability and rapid exploration of large binder libraries.</p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p><strong>Model Architecture:</strong> Autoregressive transformer that couples Multi‑head Latent Attention with a sparse Mixture‑of‑Experts (MoE) feed‑forward network, activating &lt; 50 % of parameters per token.  </p></li>
+<li><p><strong>Training Data:</strong> Large‐scale protein sequence corpora enriched for binder–receptor pairs; no explicit structural inputs.  </p></li>
+<li><p><strong>Evaluation:</strong> Generated binders are assessed with two independent structure predictors—Boltz‑2 and AlphaFold2‑Multimer—on the Docking Benchmark 5.0 (leakage‑free).  </p></li>
+<li><p><strong>Computational Efficiency:</strong> Demonstrates ~2‑3× reduction in training and inference FLOPs compared to compute‑matched dense transformers.  </p></li>
+<li><p><strong>Interpretability:</strong> Routing analysis shows expert specialization at the amino‑acid and biochemical‑group levels, a novel observation for protein‑sequence MoE models.</p></li>
+<li><p><strong>Biomedical Innovation:</strong>  </p></li>
+<li><p><strong>Accelerated Therapeutic Discovery:</strong> By delivering fast, structure‑free binder generation, MoE‑Bind enables high‑throughput screening of potential therapeutics (e.g., neutralizing antibodies, peptide inhibitors) without the bottleneck of structural modeling.  </p></li>
+<li><p><strong>Resource‑Efficient Design:</strong> The sparse architecture democratizes binder design for labs lacking extensive GPU clusters, expanding access to protein engineering tools.  </p></li>
+<li><p><strong>Transferability:</strong> The model generalizes from full‑length binders to short‑peptide design without peptide‑specific retraining, opening avenues for rapid development of peptide‑based diagnostics and therapeutics.  </p></li>
+<li><p><strong>Interpretability for Rational Engineering:</strong> Expert‑level insights into residue‑type preferences can guide rational mutagenesis and improve downstream experimental validation pipelines.  </p></li>
+</ul>
+<p>Overall, MoE‑Bind introduces a genuinely novel sparse‑expert transformer paradigm to protein binder generation, offering substantial compute savings, interpretability, and practical relevance for computational biology and therapeutic protein engineering.</p>
+<h3 id="testingthereliabilityofaigeneratedproteinstructureshttpswwwbiorxivorgcontent106489820260611731682v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.11.731682v1?rss=1">Testing the reliability of AI-generated protein structures</a></h3>
+<p><strong>Category:</strong> #Genomics_Proteomics, #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong><br />
+Current protein‑structure predictors (AlphaFold2, ColabFold) provide confidence scores (pLDDT) but there is no systematic quantification of how often they assign high confidence to sequences that cannot form a real protein. This uncertainty limits the trustworthiness of AI‑generated models for downstream biological interpretation.</p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p>Generated a large library of “realistic yet false” amino‑acid sequences (randomized but preserving length/composition distributions).  </p></li>
+<li><p>Ran predictions with <strong>AlphaFold2</strong> (via <strong>ColabFold</strong>) and recorded pLDDT scores.  </p></li>
+<li><p>Defined a positive prediction threshold (pLDDT ≥ 70) and calculated a false‑positive rate (~1/435).  </p></li>
+<li><p>Applied the same pipeline to the human genome, uncovering high‑scoring structures that corresponded to previously unannotated pseudogenes, suggesting annotation errors in 5′‑UTR extensions.  </p></li>
+<li><p><strong>Biomedical Innovation:</strong>  </p></li>
+<li><p>Provides the first quantitative estimate of AlphaFold2’s false‑positive rate, giving researchers a concrete metric to gauge the reliability of AI‑predicted structures in large‑scale genomics projects.  </p></li>
+<li><p>Highlights that even high‑confidence predictions in non‑coding regions can flag novel, biologically relevant elements (e.g., hidden pseudogenes), prompting re‑evaluation of genome annotations.  </p></li>
+<li><p>By establishing a low but non‑zero error floor, the work informs the design of pipelines that integrate AI‑generated structures into functional genomics, drug target discovery, and precision‑medicine efforts, ensuring that downstream experimental validation resources are allocated efficiently.</p></li>
+</ul>
+<h3 id="virushumanproteinproteininteractionspredictviralphenotypeshttpswwwbiorxivorgcontent106489820260612732009v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.12.732009v1?rss=1">Virus-human protein‑protein interactions predict viral phenotypes</a></h3>
+<p><strong>Category:</strong> #Genomics_Proteomics, #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong><br />
+Existing viral‑phenotype prediction pipelines rely almost exclusively on viral genomic or protein‑sequence features, ignoring the functional context provided by host‑virus protein‑protein interactions (PPIs). This omission limits predictive accuracy for traits such as human infectivity, virulence, and transmission routes.  </p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p><strong>PPI Generation:</strong> Large‑scale <em>in silico</em> virus–human PPI predictions (likely using sequence‑based docking or deep‑learning interaction predictors such as D-SCRIPT, PIPR, or AlphaFold‑Multimer).  </p></li>
+<li><p><strong>Feature Engineering:</strong> Binary/weighted interaction profiles for each virus (presence of interaction with specific human proteins) combined with functional annotations (GO, pathway enrichment).  </p></li>
+<li><p><strong>Machine‑Learning Models:</strong> Supervised classifiers (e.g., Random Forest, XGBoost, and shallow neural nets) trained on curated phenotype labels (human infectivity, virulence, transmissibility, tissue tropism, HPV risk).  </p></li>
+<li><p><strong>Benchmarking:</strong> Comparisons against virus‑only baselines that use large‑language‑model (LLM) embeddings of viral proteins and traditional genome‑based predictors.  </p></li>
+<li><p><strong>Datasets:</strong> Publicly curated virus‑human PPI datasets, phenotype annotations from ICTV, WHO, and HPV genotype risk classifications; cross‑validation on ~200 RNA viruses and ~200 HPV genotypes.  </p></li>
+<li><p><strong>Biomedical Innovation:</strong>  </p></li>
+<li><p><strong>Enhanced Risk Assessment:</strong> By integrating host‑interaction signatures, the models achieve higher precision in flagging emerging viruses with pandemic potential, supporting early public‑health interventions.  </p></li>
+<li><p><strong>Mechanistic Insight:</strong> Feature importance highlights human proteins and pathways (e.g., innate immunity, apoptosis, telomere maintenance) that drive high‑risk phenotypes, offering targets for therapeutic or diagnostic development.  </p></li>
+<li><p><strong>Clinical Translation:</strong> The approach can be embedded into genomic surveillance pipelines—once a new viral genome is sequenced, predicted PPIs feed directly into a phenotype‑risk dashboard, accelerating decision‑making for vaccine design, antiviral screening, and infection‑control policies.  </p></li>
+</ul>
+<p>Overall, the work introduces a genuinely novel computational angle—leveraging predicted virus‑human PPIs—to improve viral phenotype inference, a step forward for computational virology and pandemic preparedness.</p>
+<h3 id="promiseproteinmultistateevaluationbenchmarkinbiologicalcontextshttpswwwbiorxivorgcontent106489820260611731790v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.11.731790v1?rss=1">ProMiSE: Protein Multi-State Evaluation Benchmark in Biological Contexts</a></h3>
+<p><strong>Category:</strong> #Genomics_Proteomics, #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong> Current structure‑prediction systems excel at delivering a single, static conformation but lack systematic tools to assess and improve their ability to capture biologically relevant conformational ensembles and state transitions.  </p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p>Curated a comprehensive dataset of native biological assemblies spanning intrinsic, ligand‑induced, and protein‑induced conformational changes.  </p></li>
+<li><p>Designed an evaluation framework that quantifies multi‑state sampling fidelity for models such as AlphaFold 3, recent generative protein‑design networks, and the BioEmu decoder‑bias mitigation approach.  </p></li>
+<li><p>Conducted internal representation analyses to pinpoint where training‑data bias influences state preference (structure module vs. pairwise representations).  </p></li>
+<li><p><strong>Biomedical Innovation:</strong> By providing the first benchmark that directly measures how well AI models reproduce functional protein dynamics, ProMiSE enables the development of next‑generation predictors that can faithfully model allosteric regulation, drug‑target conformational shifts, and disease‑associated misfolding. This accelerates structure‑guided therapeutic design and deepens mechanistic insight into protein‑driven pathologies.</p></li>
+</ul>
+<h3 id="computationaldesignofoptimalsequencesfortargetedhypermutagenesisusingrecombinationcoupleddiversitygeneratingretroelementshttpswwwbiorxivorgcontent106489820260612731847v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.12.731847v1?rss=1">Computational Design of Optimal Sequences for Targeted Hypermutagenesis Using Recombination‑Coupled Diversity‑Generating Retroelements</a></h3>
+<p><strong>Category:</strong> #Genomics_Proteomics, #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong><br />
+DGRec‑mediated hypermutagenesis suffers from unpredictable efficiency because (i) the secondary structure of the dgrRNA template strongly influences reverse‑transcription fidelity, and (ii) the reverse‑transcriptase exhibits context‑dependent nucleotide‑biases that are difficult to anticipate for arbitrary target sequences.  </p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p><strong>Recoding Engine:</strong> Systematic synonymous codon substitution guided by RNA‑folding predictions (ViennaRNA) to reshape dgrRNA secondary structure without altering the encoded protein.  </p></li>
+<li><p><strong>Predictive Model:</strong> A bidirectional Long Short‑Term Memory (LSTM) network trained on &gt;10 k DGRec mutational profiles, ingesting one‑hot encoded template sequences and outputting position‑wise adenine‑to‑diversity substitution probabilities.  </p></li>
+<li><p><strong>Integration Pipeline:</strong> Automated workflow (Python 3.10, PyTorch 2.x) that first optimizes template secondary structure, then feeds the recoded sequence to the LSTM to forecast mutational spectra, enabling iterative design until a predefined diversity‑coverage metric is met.  </p></li>
+<li><p><strong>Biomedical Innovation:</strong><br />
+By delivering a rational, sequence‑level design tool for DGR‑based in‑vivo mutagenesis, the work empowers rapid, high‑resolution directed‑evolution campaigns for enzymes, antibodies, and therapeutic peptides. The ability to pre‑emptively predict and tune hypermutation landscapes accelerates the generation of functional variants, shortening the development cycle for biologics and synthetic‑biology therapeutics, and opening a path toward on‑demand, patient‑specific protein engineering in microbial chassis.</p></li>
+</ul>
+<h3 id="agraphbasedqsarmodelingpipelineforpredictinginvitropubchemassaysandinvivohumanhepatotoxicitymechanisticanalysisofcaspase37activationhttpswwwbiorxivorgcontent106489820260610731399v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.10.731399v1?rss=1">A Graph-based QSAR Modeling Pipeline for Predicting In vitro PubChem Assays and In vivo Human Hepatotoxicity: Mechanistic Analysis of Caspase‑3/7 Activation</a></h3>
+<p><strong>Category:</strong> #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong> Existing QSAR workflows for toxicology rely heavily on handcrafted fingerprints that discard topological nuance, and they struggle with highly imbalanced assay data (few actives vs many inactives), limiting predictive power for critical endpoints such as caspase activation and drug‑induced liver injury.  </p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p><strong>Data:</strong> Curated PubChem in‑vitro caspase‑3/7 and mitochondrial membrane potential (MMP) assay results; FDA DILI gold‑standard clinical dataset.  </p></li>
+<li><p><strong>Representations:</strong> Traditional binary/hashed fingerprints <strong>vs</strong> raw molecular graphs.  </p></li>
+<li><p><strong>Models:</strong>  </p>
+<ul>
+<li>Classic ML (Random Forest, XGBoost, SVM).  </li>
+<li>Graph Neural Networks (GCN, GAT).  </li>
+<li>Graph Transformers (Graphormer, GT‑BERT).  </li>
+<li>Consensus ensembles (averaging predictions across model families).  </li></ul></li>
+<li><p><strong>Training & Evaluation:</strong> Stratified 5‑fold cross‑validation, AUC, F1‑score, and precision‑recall metrics; special handling of class imbalance via focal loss and SMOTE‑like oversampling.  </p></li>
+<li><p><strong>Biomedical Innovation:</strong> By leveraging graph‑based deep learning, the pipeline captures subtle substructural cues (e.g., para‑hydroxyphenyl, long alkyl chains, epoxide fragments) that drive mitochondrial depolarization and downstream caspase‑3/7 activation, offering a mechanistic lens absent in fingerprint‑only models. The improved DILI prediction (AUC 0.69, F1 0.79) surpasses prior state‑of‑the‑art, providing a more reliable early‑screening tool for drug developers and environmental health regulators. Ultimately, this framework moves toxicology toward a data‑driven, structure‑aware paradigm that can be integrated into high‑throughput screening pipelines and inform risk assessment before costly in‑vivo studies.</p></li>
+</ul>
+<h3 id="carepathsemanticcontextawarereasoningpathswithmechanismaugmentedembeddingsfordrugrepurposinghttpswwwbiorxivorgcontent106489820260609731247v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.09.731247v1?rss=1">CAREPath: Semantic Context-Aware Reasoning Paths with Mechanism-Augmented Embeddings for Drug Repurposing</a></h3>
+<p><strong>Category:</strong> #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong><br />
+Existing biomedical knowledge‑graph (BKG) approaches for drug repurposing either traverse overly long, combinatorial paths that drown out true mechanistic signals (hub‑gene noise) or restrict themselves to overly sparse sub‑graphs, missing broader biological context. A scalable method is needed that preserves mechanistic specificity while still capturing the surrounding functional landscape.  </p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p><strong>DFS‑like module:</strong> extracts short disease‑gene‑drug paths, formats each as a structured prompt, and encodes it with a biomedical language model (e.g., BioBERT/PubMedBERT) to obtain <strong>semantic path embeddings</strong>.  </p></li>
+<li><p><strong>BFS‑like module:</strong> builds <strong>entity‑level mechanism‑context embeddings</strong> from one‑hop gene neighborhoods; these are enriched via similarity‑guided augmentation using pharmacologically related drugs and diseases with matching gene‑signature profiles.  </p></li>
+<li><p><strong>Integration:</strong> combines the two embedding streams into a unified representation fed to a downstream classifier for drug‑disease link prediction.  </p></li>
+<li><p><strong>Benchmarks:</strong> evaluated on five heterogeneous BKGs (e.g., Hetionet, DRKG) against 18 baselines, reporting AUPRC improvements up to <strong>3.8 %</strong>. Additional analyses include Gene Ontology functional agreement and robustness tests under sparse evidence.  </p></li>
+<li><p><strong>Biomedical Innovation:</strong><br />
+CAREPath delivers <strong>interpretable, mechanism‑aware repurposing hypotheses</strong> that align with known biological pathways, improving confidence for downstream experimental validation. Its context‑augmentation mitigates data sparsity—a common bottleneck in rare diseases—while preserving concise mechanistic reasoning. The framework’s ability to surface FDA‑approved indications post‑hoc demonstrates real‑world translational relevance, positioning it as a practical tool for accelerating the discovery of new therapeutic uses in a clinically actionable timeframe.</p></li>
+</ul>
+<h3 id="evaluatingcelltypeannotationsinsinglecellomicsintheabsenceofgroundtruthhttpswwwbiorxivorgcontent106489820260610731285v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.10.731285v1?rss=1">Evaluating cell type annotations in single-cell omics in the absence of ground truth</a></h3>
+<p><strong>Category:</strong> #Genomics_Proteomics, #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong> Current cell‑type annotation pipelines lack an objective, ground‑truth‑independent way to gauge whether assigned labels capture biologically reproducible signals rather than sample‑specific technical noise.  </p></li>
+<li><p><strong>Methodology & Tech Stack:</strong> Introduces <strong>Inter‑Sample Consistency (ISC)</strong> – a quantitative framework that measures the concordance of annotation‑driven expression patterns across independent biological replicates. Implemented as the <strong>scTypeEval</strong> Bioconductor package, ISC leverages standard single‑cell RNA‑seq preprocessing (e.g., Seurat/Scanpy), differential expression testing, and permutation‑based significance assessment to produce reproducibility scores for each label.  </p></li>
+<li><p><strong>Biomedical Innovation:</strong> By providing a principled, reproducible metric for cell‑type label quality, ISC enables researchers to (i) identify and correct inconsistent annotations in large atlases, (ii) benchmark automated annotation tools without needing curated gold standards, and (iii) ensure that downstream biological or clinical insights (e.g., disease‑cell‑type associations, therapeutic target discovery) are built on robust, transferable cell‑type definitions—thereby accelerating reliable translation of single‑cell genomics into precision medicine.</p></li>
+</ul>
+<h3 id="peptidiaamachinelearningframeworkforenhancedpeptideidentificationinfastgradientdataindependentacquisitionproteomicshttpswwwbiorxivorgcontent106489820260610731224v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.10.731224v1?rss=1">PeptiDIA: A Machine Learning Framework for Enhanced Peptide Identification in Fast-Gradient Data-Independent Acquisition Proteomics</a></h3>
+<p><strong>Category:</strong> #Genomics_Proteomics, #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong> Fast chromatographic gradients in DIA‑MS boost throughput but dramatically reduce peptide identification depth because conventional scoring algorithms are tuned for long‑gradient data and cannot fully exploit the richer information present in fast‑gradient spectra.  </p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p><strong>Input:</strong> DIA‑NN output tables generated at permissive FDR thresholds.  </p></li>
+<li><p><strong>Features:</strong> Combination of DIA‑NN scores (e.g., precursor intensity, fragment correlation) and engineered peptide descriptors (hydrophobicity, charge, m/z, predicted RT).  </p></li>
+<li><p><strong>Model:</strong> Gradient‑boosted decision trees (XGBoost) trained on paired fast/long‑gradient datasets; long‑gradient identifications serve as high‑confidence reference labels.  </p></li>
+<li><p><strong>Calibration:</strong> Isotonic regression applied to model scores to produce calibrated probabilities, enabling a user‑defined reference‑discordance rate (RDR) analogous to a target FDR.  </p></li>
+<li><p><strong>Deployment:</strong> Packaged as both a web‑based interface and a command‑line tool (Python, scikit‑learn, XGBoost, pandas).  </p></li>
+<li><p><strong>Biomedical Innovation:</strong> By rescuing up to one‑third more peptide identifications from fast‑gradient DIA runs without altering instrument methods, PeptiDIA directly addresses the throughput‑depth trade‑off that limits large‑scale clinical proteomics (e.g., biomarker discovery across cohorts, longitudinal patient monitoring). The increased peptide coverage improves protein‑group quantification fidelity, enabling more reliable detection of low‑abundance disease‑related proteins in routine diagnostic pipelines and accelerating translational proteomics studies.</p></li>
+</ul>
+<h3 id="decipheringcrossomicscomplexityoftissuesviadiagonalintegrationofunpairedspatialmultiomicsdatahttpswwwbiorxivorgcontent106489820260609730286v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.09.730286v1?rss=1">Deciphering cross-omics complexity of tissues via diagonal integration of unpaired spatial multi-omics data</a></h3>
+<p><strong>Category:</strong> #Genomics_Proteomics, #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong> Existing diagonal integration methods for single‑cell multi‑omics ignore the spatial context of tissue sections, leading to unreliable cross‑modal anchoring and poor alignment of spatial domains across modalities.  </p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p><strong>Model:</strong> STAMO – a graph‑attention neural network that constructs spatially‑aware graphs from each unpaired slice and learns a shared latent embedding via cross‑modal attention.  </p></li>
+<li><p><strong>Algorithms:</strong> Graph Attention Networks (GAT), contrastive loss for modality alignment, and consensus clustering for spatial domain detection.  </p></li>
+<li><p><strong>Datasets:</strong> Benchmark spatial epigenome‑transcriptome slices (ATAC‑RNA), multi‑modal spatial slices covering RNA, ATAC, DNA methylation, and protein (e.g., spatial proteomics‑RNA, spatial DNA‑RNA) across embryonic development stages.  </p></li>
+<li><p><strong>Biomedical Innovation:</strong> By enabling accurate integration of unpaired spatial omics layers, STAMO makes it possible to infer gene‑regulatory networks, epigenetic landscapes, and protein expression patterns within the same tissue architecture without the prohibitive cost of truly multimodal experiments. This opens pathways for:  </p></li>
+<li><p><strong>Spatially resolved disease atlases</strong> that combine transcriptomic, epigenomic, and proteomic signatures, improving biomarker discovery.  </p></li>
+<li><p><strong>Cross‑omics in‑silico generation</strong>, allowing researchers to predict missing modalities (e.g., epigenome from RNA) for archived samples, accelerating translational studies.  </p></li>
+<li><p><strong>Precision pathology</strong> where spatial domain concordance across omics can guide targeted therapeutic interventions and prognostic assessments.</p></li>
+</ul>
+<h3 id="dnacompressionwithgenomiclanguagemodelstokenizationbenchmarkingandaninformationcontentmaphttpswwwbiorxivorgcontent106489820260610731316v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.10.731316v1?rss=1">DNA Compression with Genomic Language Models: Tokenization, Benchmarking, and an Information-Content Map</a></h3>
+<p><strong>Category:</strong> #Genomics_Proteomics, #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong><br />
+Existing DNA compressors either ignore modern probabilistic sequence modeling or rely on tokenizations that are not tailored to the statistical properties of genomic data, limiting achievable compression rates and the ability to extract biologically meaningful information from the compression process.</p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p>Trained a family of ten <strong>GPT‑2‑small</strong> language models (DNAGPT2) on the <strong>DNABERT2 multi‑species corpus</strong> for a single epoch using an NVIDIA A40 GPU.  </p></li>
+<li><p>Varied <strong>byte‑pair encoding (BPE)</strong> vocabulary sizes (down to 32 tokens) to assess tokenization impact.  </p></li>
+<li><p>Integrated <strong>arithmetic coding</strong> for lossless compression, directly converting model probabilities to bits‑per‑base (bpb).  </p></li>
+<li><p>Benchmarked against the <strong>CobiLab</strong> compression suite and other general‑purpose compressors.  </p></li>
+<li><p>Generated a per‑nucleotide <strong>information‑content map</strong> of the T2T human genome, statistically comparing exons, introns, intergenic regions, and Alu repeats.</p></li>
+<li><p><strong>Biomedical Innovation:</strong>  </p></li>
+<li><p>Demonstrates that NLP‑style tokenization can be optimized for DNA, achieving <strong>1.47 bpb</strong>—the fourth‑best result in a recognized benchmark and surpassing all generic compressors—thereby setting a new standard for genomic data storage efficiency.  </p></li>
+<li><p>The per‑nucleotide information‑content map provides a quantitative, genome‑wide metric of sequence complexity, which can be leveraged for <strong>functional annotation</strong>, <strong>variant prioritization</strong>, and <strong>identifying regulatory hotspots</strong> without additional experimental assays.  </p></li>
+<li><p>By framing compression as a probe of generative modeling, the work offers a <strong>practical evaluation framework</strong> for future genomic language models, accelerating the development of more accurate, context‑aware predictors that could improve downstream tasks such as <strong>genome assembly</strong>, <strong>error correction in long‑read sequencing</strong>, and <strong>precision medicine pipelines</strong>.</p></li>
+</ul>
+<h3 id="phireasonevidencegroundedspecieslevelphagehostpredictionfromstructuredbiologicaltextprofileshttpswwwbiorxivorgcontent106489820260610727770v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.10.727770v1?rss=1">PHI-Reason: evidence-grounded species-level phage-host prediction from structured biological text profiles</a></h3>
+<p><strong>Category:</strong> #Genomics_Proteomics, #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong><br />
+Existing phage‑host interaction (PHI) predictors compress heterogeneous biological evidence into opaque numerical embeddings, making it difficult to trace which data support a given host assignment and limiting interpretability for downstream clinical decisions.  </p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p><strong>Evidence‑centric profiling:</strong> Automated pipelines translate phage genomes, host genomes, functional annotations, homology search results, and curated metadata into modular natural‑language “profiles.”  </p></li>
+<li><p><strong>Frozen Large Language Model (LLM):</strong> A pre‑trained transformer (e.g., GPT‑3/4‑style) is used <em>in‑ference‑only</em> to perform constrained reasoning over the supplied text, producing species‑level host rankings or pairwise PHI scores.  </p></li>
+<li><p><strong>Benchmarking & Perturbation:</strong> Comparative evaluation on standard species‑level PHI datasets against sequence‑based (k‑mer, CRISPR‑spacer) and reference‑based tools; systematic evidence ablation to quantify hallucination risk.  </p></li>
+<li><p><strong>Biomedical Innovation:</strong>  </p></li>
+<li><p><strong>Interpretability for phage therapy:</strong> Clinicians and regulatory bodies can inspect the exact genomic and functional clues that led to a host prediction, increasing confidence in selecting therapeutic phages against pathogenic bacteria.  </p></li>
+<li><p><strong>Microbiome engineering & ecology:</strong> Transparent evidence integration aids researchers in designing synthetic microbiomes and assessing off‑target effects of introduced phages.  </p></li>
+<li><p><strong>Complementary to existing pipelines:</strong> By providing an evidence‑grounded “layer of reasoning,” PHI‑Reason can flag predictions where sequence‑only methods lack sufficient support, guiding targeted wet‑lab validation and accelerating the pipeline from discovery to clinical application.</p></li>
+</ul>
+<h3 id="generalisabletissuewidemolecularreconstructionfromhistologyhttpswwwbiorxivorgcontent106489820260609731252v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.09.731252v1?rss=1">Generalisable tissue-wide molecular reconstruction from histology</a></h3>
+<p><strong>Category:</strong> #Genomics_Proteomics, #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong><br />
+Current H&amp;E‑to‑spatial‑transcriptomics models struggle to extrapolate sparse, panel‑specific molecular measurements (e.g., from TMAs) to whole‑slide, cohort‑scale maps, especially when gene panels differ across experiments.  </p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p><strong>Model architecture:</strong> Multi‑task deep convolutional network (likely ResNet‑based backbone) augmented with attention‑driven tissue‑context embeddings and a shared latent representation that aligns heterogeneous gene panels.  </p></li>
+<li><p><strong>Training strategy:</strong> Contrastive and reconstruction losses to fuse morphology, local micro‑environment cues, and cross‑dataset representation learning; optional use of domain‑adaptation techniques to harmonise data from different spatial platforms.  </p></li>
+<li><p><strong>Datasets:</strong> Sparse TMA‑derived spatial transcriptomics (multiple cancer types) + GTEx breast histology; validation against full‑coverage spatial transcriptomics (e.g., 10x Visium, Slide‑seq).  </p></li>
+<li><p><strong>Biomedical Innovation:</strong><br />
+GHIST+ makes it feasible to turn routine H&amp;E slides—already abundant in pathology labs—into high‑resolution, tissue‑wide molecular atlases without the cost and throughput limits of full‑scale spatial transcriptomics. This enables cohort‑level molecular phenotyping, supports retrospective analyses of archived TMAs, and can reveal age‑ or disease‑associated spatial gene programs that were previously inaccessible, paving the way for population‑scale precision pathology and more informed therapeutic decision‑making.</p></li>
+</ul>
+<h3 id="fromproteomeminingtostructuralvalidationphosphopyruvatehydrataseasastructurallytractabledrugtargetinkinetoplastidparasiteshttpswwwbiorxivorgcontent106489820260609731156v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.09.731156v1?rss=1">From Proteome Mining to Structural Validation: Phosphopyruvate Hydratase as a Structurally Tractable Drug Target in Kinetoplastid Parasites</a></h3>
+<p><strong>Category:</strong> #Genomics_Proteomics, #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong><br />
+Existing antiparasitic drug discovery pipelines lack a systematic, target‑centric workflow that couples large‑scale proteome mining with high‑confidence structural models for kinetoplastid parasites, making it difficult to prioritize druggable enzymes that are both essential to the parasite and divergent from the host.</p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p><strong>Proteome Mining & Druggability:</strong> Functional enrichment and comparative genomics across <em>Trypanosoma cruzi</em>, <em>Leishmania donovani</em>, and other kinetoplastids to pinpoint phosphopyruvate hydratase (PPH) as a conserved, essential enzyme with limited human homology.  </p></li>
+<li><p><strong>Structural Modeling:</strong> AlphaFold‑generated 3‑D structures for selected PPH orthologs, followed by extensive molecular dynamics (MD) refinement (GROMACS, CHARMM36 force field) to produce stable conformational ensembles.  </p></li>
+<li><p><strong>Virtual Screening:</strong> Docking of the Latin American Natural Products Database (LANaPDB) using AutoDock Vina, with subsequent MD‑based binding‑mode analysis to prioritize aptosimon and its lignan analogue hinokinin.  </p></li>
+<li><p><strong>Experimental Validation:</strong> In‑vitro antiparasitic assays on intracellular <em>T. cruzi</em> amastigotes and <em>L. donovani</em> promastigotes, yielding IC₅₀ values of 3.52 µg/mL and 13.06 µg/mL, respectively.</p></li>
+<li><p><strong>Biomedical Innovation:</strong><br />
+This work delivers a reproducible, end‑to‑end computational‑experimental pipeline that transforms raw parasite proteomes into validated drug targets, dramatically accelerating hit identification for neglected tropical diseases. By demonstrating that a structurally tractable enzyme (PPH) can be exploited across multiple kinetoplastid species, the study opens a path toward broad‑spectrum antiparasitic agents, addressing a critical unmet need in global health and providing a template for similar target‑centric endeavors in other pathogen families.</p></li>
+</ul>
+<h3 id="systematicfunctionalannotationofthousandsofbahdacyltransferasesinplantgenomesusingproteinlanguagemodelandphylogenomictoolshttpswwwbiorxivorgcontent106489820260609730906v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.09.730906v1?rss=1">Systematic functional annotation of thousands of BAHD acyltransferases in plant genomes using Protein Language Model and phylogenomic tools</a></h3>
+<p><strong>Category:</strong> #Genomics_Proteomics, #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong><br />
+Current plant gene annotation pipelines rely heavily on sequence‑similarity searches, which cannot reliably predict the specific donor‑acceptor chemistry of large, diverse enzyme families such as BAHD acyltransferases. Scaling functional inference to thousands of paralogs across many species demands a method that goes beyond simple homology.</p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p><strong>Data curation:</strong> Built FuncZymeDB‑BAHD (2,705 curated enzyme‑donor‑acceptor entries from 336 BAHDs, 156 species).  </p></li>
+<li><p><strong>Orthology‑based prediction (FuncPred‑OG):</strong> Maps query proteins to pre‑computed orthologous groups and retrieves experimentally validated activities.  </p></li>
+<li><p><strong>AI‑driven prediction (FuncPred‑AI):</strong> Generates protein embeddings with a state‑of‑the‑art protein language model (e.g., ESM‑2/ProtBert), trains logistic‑regression classifiers per donor/acceptor class, achieving AUPR &gt; 0.9 and hit‑rates up to 93 %.  </p></li>
+<li><p><strong>Validation:</strong> Five novel BAHD predictions confirmed by in‑vitro enzymatic assays and corroborated by recent literature.  </p></li>
+<li><p><strong>Deployment:</strong> Integrated workflow and datasets into an interactive web portal for on‑demand annotation of any plant proteome.</p></li>
+<li><p><strong>Biomedical Innovation:</strong><br />
+By delivering high‑confidence functional annotations for virtually the entire plant BAHD repertoire, the platform accelerates the discovery of enzymes that synthesize medically relevant secondary metabolites (e.g., phenolics, alkaloids, flavonoids). This reduces the experimental bottleneck from weeks of candidate screening to minutes of in‑silico triage, empowering metabolic‑engineering efforts for drug precursors, nutraceuticals, and sustainable biomanufacturing pipelines. The workflow also serves as a generalizable template for annotating other enzyme families critical to pharmacology and biotechnology.</p></li>
+</ul>
+<h3 id="halludesignnaextendinghalludesignfordenovonucleicaciddesignhttpswwwbiorxivorgcontent106489820260610730767v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.10.730767v1?rss=1">HalluDesign-NA: Extending HalluDesign for De Novo Nucleic Acid Design</a></h3>
+<p><strong>Category:</strong> #Genomics_Proteomics, #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong><br />
+Designing structured, functional nucleic acids de novo is hampered by the lack of methods that can jointly optimize sequence and three‑dimensional structure, especially under practical constraints (length, symmetry, protein context). Existing tools treat sequence and structure as separate steps, leading to low confidence in the resulting models.</p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p><strong>AlphaFold3</strong> for atomic‑level prediction of nucleic‑acid structures and protein‑NA complexes.  </p></li>
+<li><p><strong>NA‑MPNN</strong> (a nucleic‑acid‑specific Message‑Passing Neural Network) to iteratively refine sequences toward higher predicted confidence (pLDDT, ipTM).  </p></li>
+<li><p><strong>HalluDesign‑NA</strong> framework that couples AlphaFold3 inference with NA‑MPNN‑driven gradient‑free optimization in a loop of sequence‑structure co‑design.  </p></li>
+<li><p>Benchmark datasets: synthetic single‑stranded DNA/RNA libraries and known aptamer targets.  </p></li>
+<li><p>Open‑source implementation (Python, PyTorch, AlphaFold3 API) hosted at https://github.com/MinchaoFang/HalluDesign_NA.</p></li>
+<li><p><strong>Biomedical Innovation:</strong><br />
+By enabling reliable de novo design of ssDNA/ssRNA and aptamers, HalluDesign‑NA accelerates the creation of novel therapeutic nucleic acids (e.g., RNA‑based drugs, CRISPR guide RNAs), diagnostic aptamers, and synthetic regulatory elements. The ability to impose design constraints (symmetry, protein‑binding context) makes the platform directly applicable to precision‑medicine pipelines, synthetic biology chassis engineering, and rapid response to emerging pathogens.</p></li>
+</ul>
+<h3 id="viabilityofengineeredaavsviaproteinlanguagemodelshttpswwwbiorxivorgcontent106489820260611731521v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.11.731521v1?rss=1">Viability of engineered AAVs via protein language models</a></h3>
+<p><strong>Category:</strong> #Genomics_Proteomics, #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong><br />
+Predicting which 7‑mer peptide insertions into the AAV capsid surface (VR‑VIII loop) will remain structurally stable, assemble correctly, and retain high production yields—an issue that traditionally requires costly, low‑throughput experimental screening.  </p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p><strong>Protein language models</strong> (large‑scale Transformers such as ESM‑2/ProtBERT) trained on millions of protein sequences to embed insertion‑context relationships.  </p></li>
+<li><p><strong>Deep mutational scanning</strong> coupled with <strong>high‑throughput deep sequencing</strong> of diverse 7‑mer libraries to generate empirical viability labels.  </p></li>
+<li><p><strong>Integrative analysis</strong> of linker effects and whole‑capsid context using the language‑model embeddings, followed by supervised classification/regression to predict insertion tolerance.  </p></li>
+<li><p><strong>Cross‑serotype comparison</strong> leveraging the same models to transfer knowledge across AAV serotypes.  </p></li>
+<li><p><strong>Biomedical Innovation:</strong><br />
+By coupling AI‑driven sequence embeddings with experimental viability data, the study establishes a rapid, in‑silico filter for AAV capsid engineering. This accelerates the design of gene‑therapy vectors with tailored tropism, reduces manufacturing failures, and shortens the path from concept to clinical trial—directly advancing the safety and efficacy of next‑generation gene‑delivery platforms.</p></li>
+</ul>
+<h3 id="dldnbenchabenchmarkframeworkfordeeplearningdenovopeptidesequencinginproteomicshttpswwwbiorxivorgcontent106489820260610728383v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.10.728383v1?rss=1">DLDN-Bench: A Benchmark Framework for Deep Learning de Novo Peptide Sequencing in Proteomics</a></h3>
+<p><strong>Category:</strong> #Genomics_Proteomics, #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong><br />
+Current de novo peptide sequencing studies evaluate deep‑learning models on disparate datasets and with inconsistent metrics, making it impossible to fairly compare methods or gauge real‑world performance.</p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p><strong>Datasets:</strong> Human muscle‑biopsy LC‑MS/MS runs retrieved from PRIDE, annotated by consensus across multiple widely used database search engines (e.g., Mascot, MS‑Fragger, Andromeda).  </p></li>
+<li><p><strong>Benchmark Framework:</strong> DLDN‑Bench supplies standardized train/validation/test splits, a pseudo‑ground truth derived from cross‑engine agreement, and evaluation scripts that compute precision, coverage, and other established de novo sequencing metrics.  </p></li>
+<li><p><strong>Models Assessed:</strong> Four recent deep‑learning de novo sequencers (e.g., DeepNovo‑V2, PointNovo, pNovo3‑DL, and a transformer‑based architecture) plus traditional heuristic tools.  </p></li>
+<li><p><strong>Software Stack:</strong> Python 3, PyTorch/TensorFlow for model inference, Pandas/Numpy for data handling, and the OpenMS library for MS data preprocessing.</p></li>
+<li><p><strong>Biomedical Innovation:</strong><br />
+By providing a reproducible, community‑wide benchmark, DLDN‑Bench accelerates the validation of de novo sequencing algorithms, enabling researchers to reliably discover novel peptide variants, post‑translational modifications, and disease‑associated proteoforms. This standardization is a critical step toward translating proteomics‑driven biomarkers into clinical diagnostics and personalized therapeutic monitoring.</p></li>
+</ul>
+<h3 id="dmodeanendtoendframeworkfordifferentialmodificationandexpressionanalysisofnanoporedirectrnasequencingdatahttpswwwbiorxivorgcontent106489820260609731112v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.09.731112v1?rss=1">DModE: An end-to-end framework for Differential Modification and Expression Analysis of Nanopore direct RNA sequencing data</a></h3>
+<p><strong>Category:</strong> #Genomics_Proteomics, #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong><br />
+Existing Nanopore direct RNA‑seq (DRS) pipelines are fragmented; users must stitch together separate tools for base‑calling, alignment, expression quantification, and RNA‑modification detection, which hampers reproducibility and makes integrated differential expression + modification analysis at gene and isoform resolution cumbersome.  </p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p><strong>Pre‑processing:</strong> Nextflow workflow compatible with ONT’s Epi2ME, orchestrating Guppy base‑calling, minimap2 alignment, and Tombo/​Nanopolish for raw‑signal modification calling.  </p></li>
+<li><p><strong>Statistical Engine:</strong> Dedicated Python package (<code>dmode</code>) that leverages <strong>DESeq2</strong>‑style generalized linear models for differential gene/isoform expression and <strong>DRUMMER/​xPore</strong>‑inspired Bayesian testing for differential modification frequencies.  </p></li>
+<li><p><strong>Visualization & Reporting:</strong> Interactive HTML reports built with Plotly/Dash, featuring metagene heatmaps, isoform‑specific modification tracks, and integrated correlation plots between expression fold‑changes and modification dynamics.  </p></li>
+<li><p><strong>Reproducibility:</strong> Containerized via Docker/Singularity; workflow versioned with Git‑LFS and automatically logged with <strong>Nextflow Tower</strong>.  </p></li>
+<li><p><strong>Biomedical Innovation:</strong><br />
+By unifying transcriptomic and epitranscriptomic analyses, DModE enables researchers to directly link changes in RNA modification patterns to transcriptional regulation in disease models, accelerating discovery of modification‑driven biomarkers and therapeutic targets. The framework lowers the technical barrier for labs without extensive bioinformatics expertise, fostering broader adoption of Nanopore DRS in clinical genomics, cancer immunotherapy profiling, and neurodegenerative‑disease studies where isoform‑specific modification landscapes are increasingly recognized as critical.</p></li>
+</ul>
+<h3 id="dymotreedecodesearlycellstatetransitionsanddriversfromsinglecelltranscriptomesusingatreestructuredneuralnetworkhttpswwwbiorxivorgcontent106489820260609731114v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.09.731114v1?rss=1">DyMoTree decodes early cell state transitions and drivers from single-cell transcriptomes using a tree-structured neural network</a></h3>
+<p><strong>Category:</strong> #Genomics_Proteomics, #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong><br />
+Current single‑cell trajectory inference tools treat differentiation as a linear or low‑dimensional manifold, ignoring the inherent branching structure of developmental lineages. This limits both the precision of early‑fate bias detection and the interpretability of the inferred gene‑regulatory programs.  </p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p><strong>Model:</strong> A tree‑structured neural network (TS‑NN) that explicitly encodes lineage graph constraints as hierarchical connectivity patterns.  </p></li>
+<li><p><strong>Algorithms:</strong> Non‑linear mapping between progenitor and terminal states, supervised fine‑tuning with lineage‑tracing labels, and gradient‑based attribution for driver‑gene identification.  </p></li>
+<li><p><strong>Implementation:</strong> Built on PyTorch (or TensorFlow) with custom graph‑aware layers; leverages standard scRNA‑seq preprocessing pipelines (Scanpy, Seurat) and publicly available lineage‑tracing datasets (e.g., CRISPR‑lineage, barcoded mouse embryogenesis).  </p></li>
+<li><p><strong>Benchmarks:</strong> Simulated lineage trees, in vivo mouse embryogenesis, lung adenocarcinoma progression, and CAR‑T therapy datasets.  </p></li>
+<li><p><strong>Biomedical Innovation:</strong>  </p></li>
+<li><p><strong>Early Fate Prediction:</strong> Enables clinicians and researchers to pinpoint progenitor sub‑states that are already biased toward disease‑associated lineages, facilitating early intervention strategies.  </p></li>
+<li><p><strong>Driver Gene Discovery:</strong> Provides a systematic, interpretable pipeline to rank transcriptional regulators that steer specific branch decisions, opening avenues for targeted drug development or gene‑editing therapies.  </p></li>
+<li><p><strong>Translational Impact:</strong> By integrating explicit lineage constraints, DyMoTree improves the fidelity of cell‑state maps used in developmental biology, cancer evolution studies, and immunotherapy monitoring—critical for precision medicine pipelines that rely on accurate cellular atlases.  </p></li>
+</ul>
+<p>Overall, DyMoTree represents a substantive methodological advance in computational genomics, offering both higher accuracy and mechanistic insight for single‑cell fate mapping, with clear implications for translational research and therapeutic design.</p>
+<h3 id="asystematicimputationframeworkforsparsemultimodalspacebiologydatasetsapplicationtoretinalimagingandomicsfromtherr9missionhttpswwwbiorxivorgcontent106489820260609730965v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.09.730965v1?rss=1">A systematic imputation framework for sparse, multimodal space biology datasets: application to retinal imaging and omics from the RR9 mission</a></h3>
+<p><strong>Category:</strong> #MedicalImaging, #Genomics_Proteomics  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong><br />
+Sparse, multimodal datasets from space‑biology experiments suffer from non‑uniform missingness that hampers downstream analytics, yet existing imputation tools are not tuned for the unique MAR mechanisms and heterogeneous assay types (imaging, RNA‑seq, TUNEL) encountered in such studies.  </p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p>Four‑stage diagnostic‑imputation‑validation pipeline (missingness diagnosis via logistic regression, strategy selection, hyper‑parameter optimization, multi‑metric validation).  </p></li>
+<li><p>Implemented three imputers: K‑Nearest Neighbors, MICE with ElasticNet regularization (MICE‑Elastic), and a per‑column hybrid that selects the best method per feature.  </p></li>
+<li><p>Evaluation metrics: supervised classification accuracy, unsupervised clustering fidelity, correlation matrix preservation, masked‑value recovery, cross‑dataset generalization, and permutation testing.  </p></li>
+<li><p>Datasets: NASA Rodent Research 9 (RR9) multimodal collection (retinal OCT/fluorescence images, bulk RNA‑seq, TUNEL assay).  </p></li>
+<li><p><strong>Biomedical Innovation:</strong><br />
+By rigorously quantifying how different imputation strategies affect both predictive performance and biological structure, the framework equips space‑medicine researchers with actionable guidance to retain genuine physiological signals while mitigating data loss. This accelerates the generation of reliable digital twins for astronaut health, informs the design of future space‑flight omics and imaging studies, and provides a transferable workflow for any biomedical domain dealing with heterogeneous, sparsely sampled multimodal data.</p></li>
+</ul>
+<h3 id="phylozooaunifiedframeworkforphylogeneticnetworkanalysisinpythonhttpswwwbiorxivorgcontent106489820260609731120v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.09.731120v1?rss=1">PhyloZoo: a unified framework for phylogenetic network analysis in Python</a></h3>
+<p><strong>Category:</strong> #Genomics_Proteomics, #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong> Existing phylogenetic network tools are fragmented across inference paradigms, support limited network representations (especially semi‑directed networks), and lack a programmable, interoperable Python ecosystem for reproducible analyses.  </p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p>Implemented in pure Python, distributed via PyPI.  </p></li>
+<li><p>Provides unified data structures for rooted, unrooted, and semi‑directed phylogenetic networks.  </p></li>
+<li><p>Algorithms for network manipulation (e.g., reticulation removal, tree‑network conversion) and combinatorial operations supporting theoretical proofs.  </p></li>
+<li><p>Robust I/O handling for Newick, Nexus, PhyloXML, and extended network formats.  </p></li>
+<li><p>Integrated visualization using Matplotlib/Plotly for interactive network rendering.  </p></li>
+<li><p><strong>Biomedical Innovation:</strong>  </p></li>
+<li><p>Enables researchers to model complex reticulate evolutionary events (horizontal gene transfer, hybridization, recombination) that underpin pathogen evolution, antibiotic resistance spread, and cancer genomics, facilitating more accurate reconstruction of transmission and evolutionary histories.  </p></li>
+<li><p>By lowering the programming barrier, PhyloZoo accelerates the development of reproducible pipelines for large‑scale genomic surveillance and comparative genomics, directly supporting public‑health genomics initiatives and precision‑medicine studies that rely on network‑based evolutionary insights.</p></li>
+</ul>
+<h3 id="aquantitativecoordinatesystemfordevelopmentaldynamicshttpswwwbiorxivorgcontent106489820260609730858v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.09.730858v1?rss=1">A quantitative coordinate system for developmental dynamics</a></h3>
+<p><strong>Category:</strong> #ComputationalBiology, #MedicalImaging  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong><br />
+Current approaches to compare morphogenetic processes across embryos rely on manual staging or costly image registration, which cannot cope with the high‑dimensional, heterogeneous 4‑D datasets generated by modern light‑sheet and volumetric microscopy. This hampers quantitative assessment of developmental variability, heterochrony, and subtle structural changes.</p></li>
+<li><p><strong>Methodology & Tech Stack:</strong>  </p></li>
+<li><p><strong>STERN</strong> (Spatiotemporal Embedding for Reconstructing N‑dimensional dynamics): a self‑supervised deep‑learning pipeline that learns a continuous latent space directly from raw 4‑D image sequences.  </p></li>
+<li><p>Architecture combines a 3‑D convolutional encoder with a temporal transformer decoder, trained with contrastive and reconstruction losses to enforce smooth, biologically plausible trajectories.  </p></li>
+<li><p>No explicit voxel‑wise registration or manual staging is required; the model aligns embryos implicitly in the learned latent manifold.  </p></li>
+<li><p>Validation on three datasets: (i) mouse embryogenesis (≈200 h of multi‑view light‑sheet data), (ii) zebrafish neural‑crest lineages (multi‑angle timelapse), and (iii) mouse heart development (minute‑scale volumetric imaging).  </p></li>
+<li><p><strong>Biomedical Innovation:</strong>  </p></li>
+<li><p>Provides the first unified, quantitative coordinate system that maps individual embryos onto a common developmental timeline, enabling precise measurement of heterochrony and inter‑individual variability—critical for phenotyping genetic mutants, drug‑induced perturbations, and disease models.  </p></li>
+<li><p>By resolving minute‑scale dynamics in the mouse heart without manual annotation, STERN can uncover early structural biomarkers of congenital heart defects that are otherwise invisible to human experts.  </p></li>
+<li><p>The framework is modality‑agnostic and can be extended to patient‑derived organoids or in‑vivo imaging of human embryonic development, opening pathways for early‑diagnostic imaging pipelines and for integrating developmental data into precision‑medicine models.</p></li>
+</ul>
+<h3 id="amylopipeanintegratedwebserverformechanisticandkineticpredictionofproteinandpeptideaggregationhttpswwwbiorxivorgcontent106489820260609731090v1rss1">📄 <a href="https://www.biorxiv.org/content/10.64898/2026.06.09.731090v1?rss=1">Amylo-Pipe: an integrated web server for mechanistic and kinetic prediction of protein and peptide aggregation</a></h3>
+<p><strong>Category:</strong> #Genomics_Proteomics, #ComputationalBiology  </p>
+<ul>
+<li><p><strong>Core Engineering Problem:</strong> Existing aggregation‑prediction pipelines focus mainly on identifying aggregation‑prone regions (APRs) and provide little insight into actual aggregation kinetics, making it difficult to design proteins with reliable developability profiles.  </p></li>
+<li><p><strong>Methodology & Tech Stack:</strong> Amylo‑Pipe aggregates several state‑of‑the‑art mechanistic tools (e.g., TANGO, Zyggregator) and kinetic predictors (e.g., Aggrescan‑3D, PASTA2.0) into a single, browser‑based interface. It adds a gatekeeper‑residue mutational scanning module that systematically evaluates the effect of single‑point mutations on both APRs and predicted aggregation rates. The server is built with a Flask backend, Dockerized tool wrappers, and a React front‑end for interactive visualisation.  </p></li>
+<li><p><strong>Biomedical Innovation:</strong> By coupling mechanistic APR detection with kinetic modeling and mutation‑scan guidance, Amylo‑Pipe enables researchers and biopharma engineers to anticipate not just <em>where</em> a protein may aggregate but <em>how fast</em> it will do so, accelerating the design of aggregation‑resistant therapeutics and reducing late‑stage developability failures. This integrated, user‑friendly platform bridges a gap between computational predictions and practical protein engineering, supporting faster translation of biologics from bench to clinic.</p></li>
+</ul>
