@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biomedical Literature Feed</title>
+    <style>
+        /* Modern Academic Design System */
+        :root {
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --text-muted: #64748b;
+            --accent-color: #0284c7;
+            --border-color: #e2e8f0;
+            --card-bg: #ffffff;
+            --font-serif: "Georgia", "Times New Roman", serif;
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        /* Global Header */
+        header {
+            background: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .meta-tag {
+            font-size: 0.8rem;
+            background: #e0f2fe;
+            color: var(--accent-color);
+            padding: 4px 12px;
+            border-radius: 9999px;
+            font-weight: 600;
+        }
+
+        /* Layout Main Thread */
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Injected Feed Styling */
+        #feed-wrapper h3 {
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            margin-top: 40px;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        #feed-wrapper h3:first-of-type {
+            margin-top: 0;
+        }
+
+        #feed-wrapper h3 a {
+            color: #0f172a;
+            text-decoration: none;
+        }
+
+        #feed-wrapper h3 a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        /* Targeting the categories snippet string */
+        #feed-wrapper p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        /* Turn the bullet lists into clean structural layout blocks */
+        #feed-wrapper ul {
+            list-style: none;
+            margin-bottom: 40px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 24px;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+        }
+
+        #feed-wrapper ul li {
+            margin-bottom: 16px;
+            font-size: 0.95rem;
+            color: #334155;
+        }
+
+        #feed-wrapper ul li:last-child {
+            margin-bottom: 0;
+        }
+
+        #feed-wrapper strong {
+            color: #0f172a;
+            font-weight: 600;
+            display: inline;
+        }
+
+        .status-msg {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Biomedical Literature Feed</h1>
+            <span class="meta-tag">🔄 Daily Update</span>
+        </div>
+    </header>
+
+    <main>
+        <div id="feed-wrapper">
+            <p class="status-msg">Loading daily briefings...</p>
+        </div>
+    </main>
+
+    <script>
+        async function fetchAndRenderFeed() {
+            const container = document.getElementById('feed-wrapper');
+            try {
+                // Fetch the untouched index.html directly from the root 
+                const response = await fetch('./index.html');
+                if (!response.ok) throw new Error('Data target unreadable');
+                
+                const rawHtml = await response.text();
+                
+                // Inject the raw HTML code inside our beautifully styled frame
+                container.innerHTML = rawHtml;
+                
+                // Force outbound links to open in a clean tab safely
+                const outboundLinks = container.querySelectorAll('a');
+                outboundLinks.forEach(link => link.setAttribute('target', '_blank'));
+
+            } catch (error) {
+                console.error(error);
+                container.innerHTML = `<p class="status-msg" style="color: #ef4444;">⚠️ Technical adjustment needed. Could not stream raw source layout feed.</p>`;
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', fetchAndRenderFeed);
+    </script>
+</body>
+</html>
