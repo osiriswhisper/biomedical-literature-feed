@@ -1,5 +1,7 @@
 {
+  "version": 2,
   "rewrites": [
-    { "source": "/", "destination": "/main.html" }
+    { "source": "/", "destination": "/main.html" },
+    { "source": "/feed", "destination": "/index.html" }
   ]
 }
